@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{ participant.name }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {{ participant.userName}}
+        </div>
+        <div class="col-md-12">
+            {{ participant.password}}
+        </div>
+        <div class="col-md-12">
+            {{ participant.canVote}}
+        </div>
+    </div>
+    <div class="row">   
+        <button class="btn btn-success" (click)="onEditParticipant()">Edit</button>
+        <button class="btn btn-danger" (click)="onDeleteParticipant()">Delete</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-10">
+      <hr>
+      <table class="table table-hover table-stripped table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Points</th>
+            <th scope="col">Country voted</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let rangList of rangLists; let i = index">
+                <td>{{ rangList.name }}</td>
+                <td>{{ rangList.points }}</td>
+                <td>{{ rangList.countryVoted }}</td>
+                <td>{{ rangList.dateTimeVoted }}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

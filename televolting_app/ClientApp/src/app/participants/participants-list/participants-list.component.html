@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success" (click)="onNewParticipant()">New Participant</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-participant-item
+        *ngFor="let participantEl of participants; let i = index"
+        [participant]="participantEl"
+        [index]="i"></app-participant-item>
+    </div>
+  </div>
+  
+  

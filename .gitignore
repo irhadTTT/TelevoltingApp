@@ -1,0 +1,7 @@
+.vs/
+bin/
+obj/
+
+televolting_app/ClientApp/node_modules/
+televolting_app/ClientApp/dist/
+televolting_app/ClientApp/.angular/

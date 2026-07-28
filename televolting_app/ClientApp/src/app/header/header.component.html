@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a routerLink="/" class="navbar-brand">Televolting</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="active" *ngIf="isAuthenticated">
+                    <a routerLink="/admin">Administrators</a>
+                </li>
+                <li routerLinkActive="active" *ngIf="!isAuthenticated">
+                    <a routerLink="/auth">Authenticate</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/participants">Participants</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/rang-list">Rang List</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/winner">Winner</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngIf="isAuthenticated">
+                    <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
